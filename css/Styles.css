@@ -1,0 +1,60 @@
+@import url('http://fonts.googleapis.com/ccs2?family=Robot:wgt@300&display=swap');
+/*Defining the decoratiopn, typography, */
+/*Basic Reset*/
+* {
+                margin: 0;
+
+}
+main{
+                background-color: antiquewhite;
+}
+/*Styling the navigation link*/
+header nav{
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: large;
+                padding: 1spx;     
+}
+
+h2{
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: underline overline;
+}
+
+footer{
+                background-color: gainsboro;
+}
+
+h1{
+                text-align: center;
+                color:black;
+                text-decoration: solid;
+                font-size: large;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#myparagraph{
+                text-align: center;
+                font-style: italic;
+}
+/*Customizing the navigation*/
+header {
+                background-color: floralwhite;
+}
+header nav a{
+                margin: 0;
+                display: flex;
+                justify-content: center;
+}
+header nav a{
+                display: inline;
+                padding: 20px;
+}
+/*Customize a map*/
+.map{
+                display: flex;
+                justify-content: center;
+}
