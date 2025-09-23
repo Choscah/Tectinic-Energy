@@ -78,7 +78,23 @@
     </main>
       <!--footer section-->
       <footer style="text-align: center;">
+        <div class="footer-socials">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/27663792391" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+
         <p>&copy 2025 Tectonic Energy</p>
      </footer>
+     <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active'); // animate hamburger
+        });
+</script>
 </body>
 </html>
