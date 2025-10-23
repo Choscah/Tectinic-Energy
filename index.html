@@ -18,9 +18,56 @@
                 <li><a href="./pages/About_us.html">About_us</a></li>
                 <li><a href="./pages/Products.html">Products</a></li>
                 <li><a href="./pages/Our_Team.html">Our_Team</a></li> 
+                <li><a href="./pages/enquiry.html">Enquiry</a></li>
             </ul>
         </nav>
     </header>
+    <!--hero and card section with FAQ section -->
+    <section class="hero">
+        <h1>Welcome to Tectonic Energy</h1>
+        <p>Innovating sustainable energy for the modern world.</p>
+    </section>
+
+<section class="card-section">
+  <h2>Our Core Services</h2>
+    <div class="card-container">
+    <div class="card">
+      <img src="./assets/O&E.jpg" alt="Oil Extraction" class="equal-img">
+      <h3>Oil & Gas</h3>
+      <p>Reliable and responsible oil extraction processes with a focus on sustainability.</p>
+    </div>
+    <div class="card">
+      <img src="./assets/SOLAR.jpg" alt="Solar Energy" class="equal-img">
+      <h3>Solar Energy</h3>
+      <p>Empowering communities through solar-based renewable energy solutions.</p>
+    </div>
+    <div class="card">
+      <img src="./assets/WIND 1.jpg" alt="Wind Power" class="equal-img">
+      <h3>Wind Power</h3>
+      <p>Harnessing the power of wind for sustainable and efficient energy generation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+    <div class="accordion">
+        <button class="accordion-btn">What services do you offer?</button>
+        <div class="accordion-content">
+      <p>We offer oil, gas, and renewable energy solutions for industries and communities.</p>
+    </div>
+
+    <button class="accordion-btn">Do you support green energy?</button>
+    <div class="accordion-content">
+      <p>Yes! We actively invest in solar and wind energy projects across South Africa.</p>
+    </div>
+
+    <button class="accordion-btn">Where are you based?</button>
+    <div class="accordion-content">
+      <p>Our headquarters are in Johannesburg, with branches in Cape Town and Durban.</p>
+    </div>
+    </div>
+</section>
     <!--Main section-->
     <main>
 
@@ -56,7 +103,7 @@
         
         <p>&copy 2025 Tectonic Energy</p>
      </footer>
-     <script>
+    <script src="JS/validatedform.js">
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
@@ -64,6 +111,7 @@
         navLinks.classList.toggle('active');
         hamburger.classList.toggle('active'); // animate hamburger
         });
-</script>
+    </script>
+    <script src="JS/main_poe.js"></script>
 </body>
 </html>

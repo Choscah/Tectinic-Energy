@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tectonic Energy-Enquiry </title>
+    <link rel="stylesheet" href="../css/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <img src="../assets/download (2).jfif" alt="logo" width="400" height="300%">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Home</a>
+            <a href="./Contact.html">Contact_us</a>
+            <a href="./About_us.html">About_us</a>
+            <a href="./Products.html">Products</a>
+            <a href="./Our_Team.html">Our_Team</a>
+            <a href="./enquiry.html">Enquiry</a>
+        </nav>
+    </header>
+    <!--section part--> 
+    <section class="form-section">
+        <h1>Enquiry Form</h1>
+        <form id="enquiryForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="interest">Enquiry Type:</label>
+        <select id="interest" required>
+            <option value="">Select one...</option>
+            <option value="service">Service</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="sponsor">Sponsor</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+        </form>
+        <p id="enquiryResult"></p>
+    </section>
+    <section id="map" class="map-section"></section>
+    <script src="../JS/main_poe.js"></script>
+</body>
+</html>

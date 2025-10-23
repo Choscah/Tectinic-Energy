@@ -395,3 +395,43 @@ footer {
   color: white;
   font-size: 16px;
 }
+
+/* General reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; background: #013220; padding: 15px; }
+.navbar .logo { color: black; font-size: 20px; text-decoration: none; }
+.nav-links { list-style: none; display: flex; gap: 15px; }
+.nav-links a { color: black; text-decoration: none; padding: 8px 12px; transition: 0.3s; }
+.nav-links a:hover, .nav-links a:focus { background: #028a0f; border-radius: 5px; }
+
+/* Hero */
+.hero { background: url('../images/energy-bg.jpg') center/cover no-repeat; color: white; text-align: center; padding: 80px 20px; }
+
+/* Cards */
+.card-section { text-align: center; padding: 40px; }
+.card-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+.card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform .3s; }
+.card:hover { transform: translateY(-5px); }
+.equal-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; }
+
+/* FAQ */
+.accordion-btn { width: 100%; text-align: left; background: #013220; color: white; border: none; padding: 15px; font-size: 16px; cursor: pointer; transition: 0.3s; }
+.accordion-content { display: none; padding: 15px; border: 1px solid #ccc; }
+.accordion-btn.active { background: #028a0f; }
+
+/* Forms */
+.form-section { max-width: 600px; margin: auto; padding: 40px; }
+input, select, textarea, button { width: 100%; margin-bottom: 15px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+button { background: #013220; color: white; border: none; cursor: pointer; }
+button:hover { background: #028a0f; }
+
+/* Map */
+#map { height: 300px; margin: 40px auto; width: 90%; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { flex-direction: column; align-items: center; }
+  .card-container { grid-template-columns: 1fr; }
+}
