@@ -39,6 +39,22 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+//--Display current time--
+function.updateTime() {
+  const timeElement = document.getElementById("currentTime")
+  const now = new Date();
+  
+  // format: Day, Date Month Year | HH:MM:SS
+  const options = {weekda: "long", year: "numeric", month: "long", day: "numeric"}
+  const datestr = now.toLocaleDateString("en-ZA", options);
+  const timestr = now.toLocaleTimeString("en-ZA");
+
+  timeElement.textContent = `${datestr} | ${timestr}`;
+}
+
+//update every second
+setInterval(updateTime, 1000)
+updateTime();
 
 // Leaflet Map
 if (document.getElementById("map")) {
