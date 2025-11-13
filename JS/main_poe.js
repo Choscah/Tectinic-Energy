@@ -1,9 +1,9 @@
 // FAQ Accordion
 const acc = document.querySelectorAll(".accordion-btn");
-acc.forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.classList.toggle("active");
-    const content = btn.nextElementSibling;
+acc.forEach(button => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("active");
+    const content = button.nextElementSibling;
     content.style.display = content.style.display === "block" ? "none" : "block";
   });
 });
@@ -40,7 +40,7 @@ if (contactForm) {
   });
 }
 //--Display current time--
-function.updateTime() {
+function displayTime() {
   const timeElement = document.getElementById("currentTime")
   const now = new Date();
   

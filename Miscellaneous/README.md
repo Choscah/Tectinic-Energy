@@ -101,8 +101,11 @@ File & Folder Structure for final part(POE)
             ├── sitemap.xml
             ├── robots.txt
             └── README.md
-    |__ index.html               #Home page (entry 
+    |__ index.html               #Home page (entry)
 
+## SEO optimaization 
+    added **meta tags** for search engine optimization (SEO)
+    add **meta** tilte for SEO 
 
 Author:
 
