@@ -115,3 +115,20 @@ if (document.getElementById("map")) {
   }).addTo(map);
   L.marker([-33.9249, 18.4241]).addTo(map).bindPopup("Tectonic Energy HQ").openPopup();
 }
+
+//our team accordions 
+<script>
+function toggleAccordion(id) {
+    const element = document.getElementById(id);
+
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        // Close others
+        document.querySelectorAll(".team-info").forEach(info => info.style.display = "none");
+
+        // Show selected
+        element.style.display = "block";
+    }
+}
+</script>

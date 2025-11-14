@@ -225,43 +225,6 @@ footer {
 .footer-socials a:hover {
   color: whitesmoke;
 }
-/* our team page*/
-.staff-container {
-  display: flex;                
-  flex-wrap: wrap;              
-  justify-content: center;     
-  gap: 20px;                    
-  padding: 20px;                
-  background-color: aquamarine; 
-  background: antiquewhite;   
-}
-
-/* Each staff member card */
-.staff-member {
-  background: aqua;                      
-  border-radius: 12px;                   
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-  padding: 15px;                         
-  width: 200px;                          
-  text-align: center;                    
-  transition: transform 0.3s ease, 
-              box-shadow 0.3s ease;      
-}
-
-/* Hover effect on staff cards */
-.staff-member:hover {
-  transform: translateY(10px);          
-  box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
-}
-
-/* Staff images */
-.staff-img {
-  width: 100%;                
-  height: 200px;              
-  object-fit: cover;          
-  border-radius: 10px;       
-  margin-bottom: 10px;        
-}
 
 /* Staff member text (name + role) */
 .staff-member p {
@@ -270,6 +233,50 @@ footer {
   color: #333;               
   line-height: 1.4;           
 }
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.team-card {
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  background: #f8f8f8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+.team-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.team-img:hover {
+  transform: scale(1.1);
+}
+
+.team-info {
+  display: none;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #333;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
 /* Hamburger Button (Three Lines) */
 .hamburger {
     display: none; 
