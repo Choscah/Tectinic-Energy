@@ -27,12 +27,14 @@ v.1.2.0 - Latest Update (2025-11-19)
 
     Added cards section to home page for services.
     Added FAQ accordion for user engagement
+    added accordians for the about us infomation 
     Added Leaflet map to enquiry page.
     Created contact and enquiry forms with full JS validation.
     Implemented JavaScript functionality: FAQ, form validation, dynamic map, and responsive menu.
     Added SEO enhancements (meta tags, descriptions, alt text, sitemap, robots.txt).
     Ensured all pages are mobile-friendly.
     Added Leaflet map to enquiry page.
+    implemented a display time with current date and time 
 For this version I used HTML and  CSS for styling and JavaScript for functionality 
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
