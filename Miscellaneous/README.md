@@ -105,7 +105,8 @@ File & Folder Structure for final part(POE)
 
 ## SEO optimaization 
     added **meta tags** for search engine optimization (SEO)
-    add **meta** tilte for SEO 
+    added **meta** tilte for SEO 
+    added **display current time ** 
 
 Author:
 
