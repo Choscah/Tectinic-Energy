@@ -435,3 +435,10 @@ button:hover { background: #028a0f; }
   .nav-links { flex-direction: column; align-items: center; }
   .card-container { grid-template-columns: 1fr; }
 }
+/*current time*/
+.date-time {
+  font-size: 1.5rem;
+  font-weight: 7500;
+  color: black;
+  margin: 15px 0;
+}

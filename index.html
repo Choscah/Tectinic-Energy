@@ -34,22 +34,49 @@
                 Welcome to Tectonic Energy! We are a leading provider of innovative solutions and energy resources, committed to powering the future responsibly and sustainably.
                 Explore our website to learn about our operations, our commitment to excellence, and how we contribute to a dynamic global energy landscape." 
                 Tectonic Energy is a multinational oil and gas company focused on sustainable energy production.
-                Headquartered in Houston, Texas, the company specializes in exploration, production, refining, and distribution of petroleum products. 
+                Headquartered in Pretoria, Gauteng, the company specializes in exploration, production, refining, and distribution of petroleum products. 
                 Established in 2005, the company operates across Africa and the Middle East, prioritizing sustainable energy practices, technological innovation, and community development. 
                 With growing investments in renewable energy, Tectonic Energy is also aligning its operations with global environmental and sustainability standards.
             </p> 
      <img src="./assets/10-min-1536x864.webp" alt="logo" width="1500" height="1000">
 
-     <h2>Operations</h2>
+     <h2>Operations</h2></br>
+
      <h4>Our significant infrastructure</h4> <img src="./assets/home-infrastructure-opt.jpg" width="450" height="350">
      <p> 
         With a network of pipelines and fuel import terminals around the country, 
         we deliver about a quarter of all South Africa's fuel products, safely and reliably, wherever they are needed. 
-        Products we import through the world’s largest independent trader, the Vitol Group,
-        supplement local fuel production at our Geelong Refinery, which supplies around 50 percent of Victoria’s fuel
+        Products we import through the world`s largest independent trader, the Vitol Group,
+        supplement local fuel production at our Geelong Refinery, which supplies around 50 percent of Pretoria`s fuel
         making it an important part of South Africa's energy security.
      </p>
-     </main>
+    </main>
+
+    <p id="dateTimeDisplay" class="date-time"></p>
+    <script>
+     function updateDateTime() {
+    const now = new Date();
+    const options = {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    };
+
+    document.getElementById('dateTimeDisplay').innerText =
+      now.toLocaleDateString('en-ZA', options);
+  }
+
+  // Update every second
+  setInterval(updateDateTime, 1000);
+
+  // Run immediately on load
+  updateDateTime();
+    </script>
+
     <!--footer section-->
     <footer style="text-align: center;">
         <div class="footer-socials">
