@@ -116,9 +116,8 @@ if (document.getElementById("map")) {
   L.marker([-33.9249, 18.4241]).addTo(map).bindPopup("Tectonic Energy HQ").openPopup();
 }
 
-//our team accordions 
 <script>
-function toggleAccordion(id) {
+  function toggleAccordion(id) {
     const element = document.getElementById(id);
 
     if (element.style.display === "block") {
@@ -130,5 +129,5 @@ function toggleAccordion(id) {
         // Show selected
         element.style.display = "block";
     }
-}
+  }
 </script>
