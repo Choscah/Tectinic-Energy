@@ -449,4 +449,12 @@ button:hover { background: #028a0f; }
   color: black;
   margin: 15px 0;
 }
- /*Team Accordion*/
+ /*search input*/
+ .search-box {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  border: 2px solid #0a4d8c;
+  border-radius: 8px;
+}

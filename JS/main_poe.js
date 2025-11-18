@@ -116,6 +116,7 @@ if (document.getElementById("map")) {
   L.marker([-33.9249, 18.4241]).addTo(map).bindPopup("Tectonic Energy HQ").openPopup();
 }
 
+//our team 
 <script>
   function toggleAccordion(id) {
     const element = document.getElementById(id);
@@ -130,4 +131,17 @@ if (document.getElementById("map")) {
         element.style.display = "block";
     }
   }
+</script>
+
+//search input
+<script>
+function searchFunction() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let items = document.querySelectorAll("#searchList li");
+
+    items.forEach(item => {
+        let text = item.textContent.toLowerCase();
+        item.style.display = text.includes(input) ? "" : "none";
+    });
+}
 </script>
