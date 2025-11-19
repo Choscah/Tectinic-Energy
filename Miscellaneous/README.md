@@ -32,6 +32,9 @@ File & Folder Structure
     └── assets/
     |     ├── images             # Images used in the site 
     | 
+    |── Miscellaneous
+    |      ├── Changelog.md       #changes begin logged to the versions of website  
+    |      └── README.md          #changes made to the website
     |__ index.html               #Home page (entry point)
 
 Installation / How to Run
@@ -103,7 +106,8 @@ File & Folder Structure for final part(POE)
     |── Miscellaneous
     |       ├── sitemap.xml
     |       ├── robots.txt
-    |       └── README.md
+    |       |──Changelog.md         #changes begin logged to the versions of website  
+    |       └── README.md           #changes made to the website
     |__ index.html               #Home page (entry)
 
 ## SEO optimaization 
