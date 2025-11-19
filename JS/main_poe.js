@@ -10,52 +10,40 @@ acc.forEach(button => {
 
 //validated form
 <script>
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Stop form from submitting until validated
+// =========================
+// VALIDATED CONTACT FORM
+// =========================
+const contactForm = document.getElementById("contactForm");
 
-    // Get form values
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const message = document.getElementById("message").value.trim();
-    const status = document.getElementById("formStatus");
+if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    // Validation patterns
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phonePattern = /^[0-9]{10}$/; // Example: SA phone num (10 digits)
+        // Get input values
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
 
-    // Clear status
-    status.innerHTML = "";
-    status.style.color = "red";
+        // Validation patterns
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phonePattern = /^[0-9]{10}$/;
 
-    // Validation checks
-    if (name === "") {
-        status.innerHTML = "Please enter your name.";
-        return;
-    }
+        status.innerHTML = "";
+        status.style.color = "red";
 
-    if (!emailPattern.test(email)) {
-        status.innerHTML = "Please enter a valid email address.";
-        return;
-    }
+        if (name === "") return status.innerHTML = "Please enter your name.";
+        if (!emailPattern.test(email)) return status.innerHTML = "Please enter a valid email address.";
+        if (!phonePattern.test(phone)) return status.innerHTML = "Phone number must be 10 digits.";
+        if (message.length < 10) return status.innerHTML = "Message must be at least 10 characters.";
 
-    if (!phonePattern.test(phone)) {
-        status.innerHTML = "Phone number must be 10 digits.";
-        return;
-    }
-
-    if (message.length < 10) {
-        status.innerHTML = "Message must be at least 10 characters.";
-        return;
-    }
-
-    // Success message
-    status.style.color = "green";
-    status.innerHTML = "Form submitted successfully!";
-
-    // OPTIONAL: Send form using AJAX
-    // setTimeout(() => { document.getElementById("contactForm").submit(); }, 1000);
-});
+        // Success
+        status.style.color = "green";
+        status.innerHTML = "Form submitted successfully!";
+        contactForm.reset();
+    });
+}
 </script>
 
 
