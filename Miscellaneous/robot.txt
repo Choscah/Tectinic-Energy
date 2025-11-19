@@ -1,3 +1,25 @@
 User-agent: *
 Allow: /
 Sitemap: https://yourdomain.com/sitemap.xml
+
+# Robots.txt for Tectonic Energy website
+
+# Allow all search engines
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+
+# Disallow specific pages
+Disallow: /contact-form
+Disallow: /terms-and-conditions
+
+# Allow Googlebot to crawl the blog folder
+User-agent: Googlebot
+Allow: /blog/
+
+# Crawl delay for Bingbot (to prevent overload)
+User-agent: Bingbot
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://www.yoursite.com/sitemap.xml
