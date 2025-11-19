@@ -1,3 +1,6 @@
+# Tectonic Energy – Website Project
+This project contains the front-end source code for the Tectonic Energy company website.  
+The site includes service listings, enquiry forms, a contact page, an interactive map, and multiple UI enhancements.
 This is a simple static website built using HTML, CSS, and JavaScript.
 It demonstrates basic web structure, styling, and interactivity for learning and practice purposes.
 
@@ -98,15 +101,44 @@ File & Folder Structure for final part(POE)
     |     ├── images             # Images used in the site  
     |
     |── Miscellaneous
-            ├── sitemap.xml
-            ├── robots.txt
-            └── README.md
+    |       ├── sitemap.xml
+    |       ├── robots.txt
+    |       └── README.md
     |__ index.html               #Home page (entry)
 
 ## SEO optimaization 
     added **meta tags** for search engine optimization (SEO)
     added **meta** tilte for SEO 
     added **display current time ** 
+
+## Features
+
+### Fully validated forms
+- Contact form validation (name, email, phone, message)
+- Enquiry form validation (name, selection field)
+- Error and success messages displayed dynamically
+
+### Responsive design
+- Layout adapted for mobile, tablet, and desktop screens
+- Improved spacing, component scaling, and text responsiveness
+
+### Search bar functionality
+- Filters list items dynamically as the user types
+- Case-insensitive search
+- Lightweight and fast
+
+### Team section accordion
+- Clicking on a team member reveals hidden information
+- Smooth and accessible toggle
+
+### Live Date & Time Display
+- Auto-updates every second
+- Localized format (South Africa region)
+
+### Leaflet Map Integration
+- Shows company HQ using OpenStreetMap tiles
+- Popup marker included
+- Loads only on pages containing a map element
 
 Author:
 
