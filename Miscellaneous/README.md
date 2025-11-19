@@ -33,6 +33,8 @@ File & Folder Structure
     |     ├── images             # Images used in the site 
     | 
     |── Miscellaneous
+    |      ├── robot.txt
+    |      ├── sitemap.xml
     |      ├── Changelog.md       #changes begin logged to the versions of website  
     |      └── README.md          #changes made to the website being recorded 
     |
