@@ -23,6 +23,8 @@ File & Folder Structure
     │__ Pages  
     |    ├── About_us.html          # About page  
     |    ├── Contact.html        # Contact page  
+    |    ├── enquiry.html       # enquiry page
+    |    ├── Services.html      # Services page
     |    |__ Our_team.html      # Our team page
     |    |__ Product.html       # Products page 
     │
