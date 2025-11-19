@@ -117,3 +117,13 @@ function searchFunction() {
         item.style.display = text.includes(input) ? "" : "none";
     });
 }
+
+// team accordion
+document.querySelectorAll(".staff-member").forEach(member => {
+  member.addEventListener("click", function() {
+    const info = this.querySelector(".team-info");
+
+    //toggle visibility
+    info.classList.toggle("open");
+  });
+});

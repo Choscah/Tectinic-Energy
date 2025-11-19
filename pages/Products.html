@@ -26,7 +26,14 @@
             </ul>
         </nav>
     </header><br/>
-    <input type="text" id="searchInput" placeholder="Search here..." onkeyup="searchFunction()" class="search-box">
+
+    <!--search bar container-->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search here..." onkeyup="searchFunction()" class="search-box">
+        <button onclick="searchFunction()" class="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+
+    <!--search list -->
     <ul id="searchList">
         <li>93 unleaded petroleum barrel</li>
         <li>95 unleaded petroleum barrel</li>

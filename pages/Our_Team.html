@@ -23,8 +23,14 @@
             </ul>
         </nav>
     </header>
+
     <!--search input-->
-    <input type="text" id="searchInput" placeholder="Search here..." onkeyup="searchFunction()" class="search-box">
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search here..." onkeyup="searchFunction()" class="search-box">
+        <button onclick="searchFunction()" class="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+    
+    <!--search list -->
     <ul id="searchList">
         <li>Tom Layman</li>
         <li>Denise Castillo-Rhoades</li>
