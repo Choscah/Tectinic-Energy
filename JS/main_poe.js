@@ -96,7 +96,7 @@ function displayTime() {
   const now = new Date();
   
   // format: Day, Date Month Year | HH:MM:SS
-  const options = {weekda: "long", year: "numeric", month: "long", day: "numeric"}
+  const options = {weekday: "long", year: "numeric", month: "long", day: "numeric"}
   const datestr = now.toLocaleDateString("en-ZA", options);
   const timestr = now.toLocaleTimeString("en-ZA");
 
@@ -116,15 +116,16 @@ if (document.getElementById("map")) {
   L.marker([-33.9249, 18.4241]).addTo(map).bindPopup("Tectonic Energy HQ").openPopup();
 }
 
-//search input
-<script>
-  function searchFunction(params) {
-  let input = document.getElementById("searchInput").value.toLowercase();
-  let items = document.querySelectorAll("#searchlist li");
 
-  items.forEach(item => {
-    let text = item.textContent.toLowercase();
-    item.style.display = text.includes(input) ?"" : "none"
-  });
-  }
-</script>
+// =========================
+// SEARCH BAR FUNCTION
+// =========================
+function searchFunction() {
+    const input = document.getElementById("searchInput").value.toLowerCase();
+    const items = document.querySelectorAll("#searchlist li");
+
+    items.forEach(item => {
+        const text = item.textContent.toLowerCase();
+        item.style.display = text.includes(input) ? "" : "none";
+    });
+}
