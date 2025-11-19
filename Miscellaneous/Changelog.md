@@ -25,16 +25,51 @@ For this version I used HTML and  CSS for styling
 v.1.2.0 - Latest Update (2025-11-19)
 ## added 
     Added java for functionality
+
     Added cards section to home page for services.
+
     Added FAQ accordion for user engagement
+
     added accordians for the about us infomation 
+
     Added Leaflet map to enquiry page.
+
     Added SEO enhancements (meta tags, descriptions, alt text, sitemap, robots.txt).
+
 ## updated & Implemented 
     Updated  contact and enquiry forms with full JS validation.
+
     Implemented JavaScript functionality: FAQ, form validation, dynamic map, and responsive menu.
+
     Ensured all pages are mobile-friendly.
+
     Implemented a display time with current date and time 
+
 For this version I used HTML and  CSS for styling and JavaScript for functionality 
 
- 
+ REFERENCES
+    The following resources were used as guidance for development, debugging, and enhancement of the Tectonic Energy website:
+
+    **MDN Web Docs – JavaScript & Web APIs**  
+   Comprehensive reference for JavaScript, DOM manipulation, HTML, and CSS.  
+   https://developer.mozilla.org/
+
+    **W3C HTML & CSS Standards**  
+   Best-practice guidelines for creating accessible and valid web markup.  
+   https://www.w3.org/
+
+    **W3Schools Web Development Reference**  
+   Tutorials for JavaScript, HTML, CSS, and form validation techniques.  
+   https://www.w3schools.com/
+
+    **Leaflet JS Official Documentation**  
+   Used for implementing interactive maps and markers.  
+   https://leafletjs.com/
+
+    **Bootstrap & Responsive Design Principles** (for mobile-friendly layout concepts)  
+   https://getbootstrap.com/docs/
+
+    **Google Fonts**  
+   For typography and UI styling.  
+   https://fonts.google.com/
+

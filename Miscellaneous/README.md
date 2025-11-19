@@ -34,7 +34,8 @@ File & Folder Structure
     | 
     |── Miscellaneous
     |      ├── Changelog.md       #changes begin logged to the versions of website  
-    |      └── README.md          #changes made to the website
+    |      └── README.md          #changes made to the website being recorded 
+    |
     |__ index.html               #Home page (entry point)
 
 Installation / How to Run
